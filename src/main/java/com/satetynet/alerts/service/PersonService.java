@@ -1,9 +1,9 @@
 package com.satetynet.alerts.service;
 
-import com.satetynet.alerts.model.Person;
+import com.satetynet.alerts.dto.PersonRequestDTO;
 
 public interface PersonService {
-    void add(Person person);
-    void update(Person person);
+    void add(PersonRequestDTO dto);
+    void update(PersonRequestDTO dto);
     void delete(String firstName, String lastName);
 }

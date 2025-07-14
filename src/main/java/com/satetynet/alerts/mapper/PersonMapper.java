@@ -2,9 +2,11 @@ package com.satetynet.alerts.mapper;
 
 import com.satetynet.alerts.dto.PersonRequestDTO;
 import com.satetynet.alerts.model.Person;
+import org.springframework.stereotype.Component;
 
+@Component
 public class PersonMapper {
-    public static Person toEntity(PersonRequestDTO dto) {
+    public Person toEntity(PersonRequestDTO dto) {
         return Person.builder()
                 .firstName(dto.getFirstName())
                 .lastName(dto.getLastName())
